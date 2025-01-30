@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Recognition Attendance System</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <nav>
+      <div>
+          <button id="exportData" class="nav-button">Export Attendance Data</button>
+      </div>
+  </nav>
+  <h1 class="page-title">Face Recognition Attendance System</h1>
+    <div class="container">
+      
+      <div class="main-content">
+        <!-- Real-Time Camera Feed -->
+        <div class="camera-section">
+          <h2>Real-Time Camera Feed</h2>
+          <div class="camera-feed">
+            <canvas id="canvas"></canvas>
+            <p>Position your face in front of the camera to mark attendence.</p>
+          </div>
+        </div>
+
+        <!-- Attendance Log -->
+        <div class="attendance-log">
+          <h2>Attendance Log</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Name</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="attendance-tbody">
+              <!-- Attendance rows will be dynamically populated here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
